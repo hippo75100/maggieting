@@ -1,7 +1,7 @@
 console.log("hi!");
 var http = require("http");
 var request = require("request");
-var port = 1337;
+var port = Number(process.env.PORT || 3000);
 var url = "http://graph.facebook.com/2014METEORmeethere/photos?type=uploaded";
 var fs = require('fs');
 
